@@ -9,7 +9,7 @@ df1 = pd.DataFrame(index=dates)
 
 
 for symbol in symbols:
-    df_tmp = pd.read_csv("{}.csv".format(symbol), index_col='Date', parse_dates=True, usecols=[
+    df_tmp = pd.read_csv("data\{}.csv".format(symbol), index_col='Date', parse_dates=True, usecols=[
         'Date', 'Adj Close'], na_values=['nan'])
     df_tmp = df_tmp.rename(columns={'Adj Close': symbol})
     df1 = df1.join(df_tmp)
