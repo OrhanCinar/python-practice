@@ -17,6 +17,7 @@ for symbol in symbols:
 
 df1 = df1.dropna()
 
+
 ax = df1['SPY'].plot(title='Stock rolling mean', label='SPY')
 
 ax.set_xlabel('Date')
