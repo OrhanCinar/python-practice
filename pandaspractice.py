@@ -28,10 +28,3 @@ rm_SPY = df1['SPY'].rolling(window=20).mean().plot(label='Rolling mean', ax=ax)
 
 df1['SPY'].plot()
 plt.show()
-'''
-
-
-
-
-
-'''
